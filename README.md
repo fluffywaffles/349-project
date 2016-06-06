@@ -34,9 +34,9 @@ Thanks!
 
 ## How to run the scraper (in general)
 
-First, you need to install all the dependencies. (There aren't many.)
-
 You must **already** have nodejs and npm installed.
+
+Then, you need to install the dependencies. (There aren't many.)
 
 ```
 npm i -g phantomjs casperjs
