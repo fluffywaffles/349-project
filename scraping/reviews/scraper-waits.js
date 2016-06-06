@@ -147,10 +147,8 @@ function processReviewPage () {
       document.getElementById('MoreContentForm' + page).submit()
     }, page++)
 
-    this.then(function () {
-      this.wait(500, function () {
-        return this.then(processReviewPage)
-      })
+    return this.wait(100, function () {
+      return this.then(processReviewPage)
     })
   }
 }
