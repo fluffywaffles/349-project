@@ -140,7 +140,7 @@ function processReviewPage () {
   this.echo('Got AppHub Review page: ' + page + '.')
 
   reviews = this.evaluate(processReviews, page)
-  if (reviews.length) {
+  if (reviews.length && page < 100) {
     reviews.forEach(output_object)
 
     this.thenEvaluate(function (page) {
