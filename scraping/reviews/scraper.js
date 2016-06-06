@@ -124,13 +124,15 @@ function processReviews (page) {
   })
 }
 
-if (!fs.exists('data/reviews/' + gameid + '.csv')) {
-  console.log('Fresh scrape job!')
-  console.log('Writing headers...')
-  output_line(headers, 'wrote headers: ' + headers.toString())
-} else {
-  console.log('Continuing old scrape job...')
+if (fs.exists('data/reviews/' + gameid + '.csv')) {
+  console.log('Clean up the old data...')
+  fs.remove('data/reviews/' + gameid + '.csv')
+  console.log('All gone!')
 }
+
+console.log('Fresh scrape job!')
+console.log('Writing headers...')
+output_line(headers, 'wrote headers: ' + headers.toString())
 
 // NOTE(jordan): begin scraping
 console.log('\n================\n\nBegin scraping!\n\n===============\n')
