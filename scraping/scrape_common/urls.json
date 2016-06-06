@@ -1,0 +1,72 @@
+{
+  "base": "http://store.steampowered.com/",
+  "communityBase": "http://steamcommunity.com/",
+  "games": {
+    "base": "base",
+    "path": "search/results",
+    "params": {
+      "sort_by": "_ASC",
+      "tags": "-1",
+      "category1": "998",
+      "page": "1",
+      "snr": "1_7_7_230_7"
+    },
+    "params_allowed": {
+      "sort_by": [
+        "_ASC",
+        "Released_DESC",
+        "Name_ASC",
+        "Price_ASC",
+        "Price_DESC",
+        "Reviews_DESC"
+      ]
+    }
+  },
+  "apphub_reviews": {
+    "base": "communityBase",
+    "path": "app/{gameid}/homecontent",
+    "params": {
+      "userreviewsoffset": "0",
+      "p":"1",
+      "workshopitemspage":"1",
+      "readytouseitemspage":"1",
+      "mtxitemspage":"1",
+      "itemspage":"1",
+      "screenshotspage":"1",
+      "videospage":"1",
+      "artpage":"1",
+      "allguidepage":"1",
+      "webguidepage":"1",
+      "integratedguidepage":"1",
+      "discussionspage":"1",
+      "numperpage":"10",
+      "browsefilter":"toprated",
+      "appid":"433950",
+      "appHubSubSection":"10",
+      "l":"english",
+      "appHubSubSection":"10",
+      "browsefilter":"toprated",
+      "filterLanguage":"default",
+      "searchText":"&",
+      "forceanon":"1"
+    }
+  },
+  "reviews": {
+    "base": "base",
+    "path": "appreviews/{gameid}",
+    "params": { 
+      "language": "english",
+      "start_offset": "0",
+      "day_range": "1",
+      "filter": "all"
+    },
+    "params_allowed": {
+      "filter": [
+        "all",
+        "positive",
+        "negative",
+        "funny"
+      ]
+    }
+  }
+}

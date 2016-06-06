@@ -1,0 +1,7 @@
+page=1
+
+while [ $page -lt 400 ]; do
+  echo "\n===============\n\nScrape page $page\n\n===============\n"
+  casperjs scraping/gamedata/scraper.js --page=$page
+  page=$(($page + 1))
+done
