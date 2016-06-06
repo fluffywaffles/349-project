@@ -104,7 +104,7 @@ function processReviews (page) {
 
     reviewdata.date = reviewContent.querySelector('.date_posted').innerText.split(':')[1].trim()
 
-    reviewdata.reviewText = reviewContent.querySelector('.apphub_CardTextContent').innerText.split(/\r?\n|\r/g).slice(2).map(function (s) { return s.trim() }).join(' ')
+    reviewdata.reviewText = reviewContent.querySelector('.apphub_CardTextContent').innerText.split(/\r?\n|\r/g).slice(2).map(function (s) { return s.trim() }).join('\\n')
 
     reviewAuthor = review.querySelector('.apphub_CardContentAuthorBlock')
 

@@ -8,7 +8,7 @@ tail -n +2 data/gamedata-saved.csv | cut -d, -f1 | while read -r gameid; do
   casperjs scraping/reviews/scraper.js --gameid=$gameid &
   i=$(($i+1))
 
-  if [[ i -gt 5 ]]; then
+  if [[ i -gt 15 ]]; then
     wait
     i=0
   fi
