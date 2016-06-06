@@ -1,0 +1,5 @@
+cat $1 | while read -r gameid; do
+  gameid=`echo "$gameid" | tr -d '"'`
+  echo "\n===============\n\nScrape gameid $gameid\n\n===============\n"
+  casperjs scraping/reviews/scraper.js --gameid=$gameid
+done
