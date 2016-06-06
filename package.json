@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "description": "",
+  "main": "scraper.js",
+  "dependencies": {
+    "casperjs": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skorlir/349-project.git"
+  },
+  "author": "@skorlir",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/skorlir/349-project/issues"
+  },
+  "homepage": "https://github.com/skorlir/349-project#readme"
+}
