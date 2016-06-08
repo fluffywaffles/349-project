@@ -1,2 +1,4 @@
 node_modules
 .fuse_hidden*
+data/reviews-aggregators/*
+hmm/*.pickle
