@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+DIR=`dirname $0`
+
+wc -l $DIR/../../reviews/* | awk '{ if ($1 > 100) print $2 }'

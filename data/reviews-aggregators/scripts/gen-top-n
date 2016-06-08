@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+DIR=`dirname $0`
+
+parallel --eta --timeout 200% $DIR/grab-n $1 ::: $2
