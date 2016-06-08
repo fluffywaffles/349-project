@@ -1,7 +1,4 @@
-# from bs4 import BeautifulSoup, Comment
-import json #to use json files
 import codecs # to open a text file in utf-8
-import urllib
 import pandas # To extract data from the csv and have robust functionality
 import glob
 
